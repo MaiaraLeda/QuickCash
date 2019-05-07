@@ -13,40 +13,125 @@
 </head>
 
 <body>
-
-	<header>
-		
+	<!--=====|header|=====-->	
+	<header class="containerHeader">
+		<section class="containerHeader-barraSuperior">
+			<div class="blocoLogo">
+				<img class="blocoLogo-logo" src="assets/quickcash.jpg">
+			</div>
+			<nav class="blocoMenu">
+				<a href="" class="blocoMenu-link">About us</a>
+				<a href="" class="blocoMenu-link">Our Products</a>
+				<a href="" class="blocoMenu-link">Contacts</a>
+				<div class="blocoLanguage">
+					<a class="blocoLanguage-link" href=""><span>EN</span>/FR</a>
+				</div>
+			</nav>
+		</section>
+		<div class="blocoTituloImagem">
+			<h1 class="blocoTituloImagem-tituloHeader">Breaking the boundaries between urban and rural áreas!</h1>
+			<div class="blocoTituloImagem-imagemHeader"></div>
+		</div>
 	</header>
-	<section class="apresentacao">
-		<div class="apresentacao-circulo circuloMaior"></div>
-		<div class="apresentacao-circulo circuloMenor"></div>
-		<div class="apresentacao-slide">
-			
-		</div>
-		<div class="apresentacao-textoLateral">
-			<h1 class="apresentacao-textoLateral-texto"></h1>
+	<!--=====|Produtos e Apresentação|=====-->
+	<section class="container">
+		<h1 class="container-titulo">Our products</h1>
+		<div class="containerProdutos">
+			<div class="containerProdutos-bloco">
+				<h1 class="containerProdutos-bloco-titulo">Cash to Cash</h1>
+				<img class="containerProdutos-bloco-imagem" src="assets/cash.png" alt="">
+				<p class="containerProdutos-bloco-paragrafo">Transfer of money from one individual to another</p>
+			</div>
+			<div class="containerProdutos-bloco">
+				<h1 class="containerProdutos-bloco-titulo">Cash to Card</h1>
+				<img class="containerProdutos-bloco-imagem" src="assets/card.png" alt="">
+				<p class="containerProdutos-bloco-paragrafo">Transfer of money from an individual onto a card</p>
+			</div>
+			<div class="containerProdutos-bloco">
+				<h1 class="containerProdutos-bloco-titulo">Cash to Account</h1>
+				<img class="containerProdutos-bloco-imagem" src="assets/account.png" alt="">
+				<p class="containerProdutos-bloco-paragrafo">Transfer of money from an individual to a bank account</p>
+			</div>
+			<div class="containerProdutos-bloco">
+				<h1 class="containerProdutos-bloco-titulo">Nos Valeurs</h1>
+				<img class="containerProdutos-bloco-imagem" src="assets/valeurs.png" alt="">
+				<p class="containerProdutos-bloco-paragrafo">Solidarité - Écoute Responsabilité - Volonté Innovation - Réactivité</p>
+			</div>
 		</div>
 	</section>
-	<section class="nossoProdutos">
-		
+	<!--==========-->
+	<!--=====|Apresentação Simulador|=====-->
+	<section class="containerSimulador">
+		<form class="containerSimulador-formulario" action="">
+			<label for="">
+				<h1>From:</h1>
+				<select class="containerSimulador-select" name="simulador" id="">
+					<option value="frace">France</option>
+					<option value=""></option>
+					<option value=""></option>
+				</select>
+				<h1>To:</h1>
+				<select class="containerSimulador-select" name="" id="">
+					<option value="frace">France</option>
+					<option value=""></option>
+					<option value=""></option>
+				</select>
+			</label>
+			<input type="text">
+			<input type="text">
+			<div class="containerSimulador-texto">
+				<p>Today's rate: €1 = 655.96 FCFA</p>
+				<p>€2.00 fee</p>
+			</div>
+		</form>
+		<!--=====|Apresentação Simulador - Bloco lateral|=====-->
+		<div class="containerSimulador-blocoLateral">
+			<h1 class="containerSimulador-titulo">Simulate your transfer</h1>
+			<h2 class="containerSimulador-subTitulo">QuickCash is currently available in these countries:</h2>
+			<div class="containerSimulador-paises">
+				<div class="containerSimulador-bandeira">
+					<img src="assets/2.png" alt="">
+					<p class="containerSimulador-nome">Ivory Coast</p>
+				</div>
+				<div class="containerSimulador-bandeira">
+					<img src="assets/3.png" alt="">
+					<p class="containerSimulador-nome">Burkina Faso</p>
+				</div>
+				<div class="containerSimulador-bandeira">
+					<img src="assets/4.png" alt="">
+					<p class="containerSimulador-nome">Mali</p>
+				</div>
+				<div class="containerSimulador-bandeira">
+					<img src="assets/5.png" alt="">
+					<p class="containerSimulador-nome">Niger</p>
+				</div>
+				<div class="containerSimulador-bandeira">
+					<img src="assets/6.png" alt="">
+					<p class="containerSimulador-nome">Togo</p>
+				</div>
+			</div>
+			
+		</div>
 	</section>
-	<main>
-		<section class="">
-			
-		</section>
-		<section class="">
-			
-		</section>
-		<sidebar class="">
-			
-		</sidebar>
-		<section class="">
-			
-		</section>
-	</main>
-	<footer>
-		
-	</footer>
-
+	<!--==========-->
+	<!--=====|Apresentação Slide|=====-->
+	<section class="containerSlide">
+		<div class="slide">
+			<input id="slide" type="checkbox">
+			<label for="slide" class="slide-primeiroBloco">
+				<img class="slide-primeiroBloco-img" src="assets/female-farmer-kenya-west.png" alt="">
+				<p class="slide-primeiroBloco-paragrafo">"With QuickCash, I no longer need to go into town for my transfers. Even in the village I can make my transfers at the ATM. Thank you QuickCash to have thought about the rural population. "</p>
+				<h1 class="slide-primeiroBloco-titulo">ThéodoreN'Daplé (Farmer)</h1>
+			</label>
+			<label for="slide" class="slide-segundoBloco">
+				<img class="slide-segundoBloco-img" src="assets/female-farmer-kenya-west.png" alt="">
+			</label>
+		</div>
+		<div class="containerSlide-blocoLateral">
+			<h2 class="containerSlide-titulo">Writing a new page in the history of money transfer along with you!</h2>
+			<div class="primeiroCirculo"></div>
+			<div class="segundoCirculo"></div>
+		</div>
+	</section>
 </body>
 </html>

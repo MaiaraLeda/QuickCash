@@ -1,2 +1,315 @@
 * {box-sizing: border-box; border:0; margin:0; padding:0; font-style: none; text-decoration: none; list-style: none;}
-body {font: 100% 'Montserrat Alternates', sans-serif; /*'Merriweather Sans', sans-serif;*/}
+body {font: 100% 'Muli', sans-serif, Montserrat Alternates, sans-serif;} /*'Merriweather Sans', sans-serif;*/
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+/*=====|Header|=====*/
+.containerHeader{
+	width: 100%;
+	/*max-height: 695px;*/
+	/*position: relative;*/
+}
+.containerHeader-barraSuperior{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.blocoLogo{
+	/*width: 260px;*/
+}
+.blocoLogo-logo{
+	/*width: 260px;*/
+}
+.blocoMenu{
+	/*width: 70%;*/
+	/*position: relative;*/
+	/*left: 230px;*/
+	/*bottom: 80px;*/
+	display: flex;
+	margin-top: 3%;
+	/*justify-content: flex-end;*/
+}
+.blocoMenu-link{
+	font-family: 'Muli', sans-serif;
+	color: rgba(238,51,37,1);
+	font-size: 1.2rem;
+	margin-left: 30px; 
+}
+.blocoLanguage{
+	/*width: 30px;*/
+	font-family: 'Muli', sans-serif;
+	margin-left: 50px;
+	/*left: 90%;*/
+	/*bottom: 606px;*/
+	/*position: absolute;*/
+}
+.blocoLanguage-link{
+	color: black;
+	font-size: 0.7rem;
+}
+.blocoLanguage span{
+	font-weight: bolder;
+}
+/*=====|Titulo e imagem Header|=====*/
+.blocoTituloImagem{
+	width: 100%;
+}
+.blocoTituloImagem:before{
+	position: absolute;
+	content:'';
+	width: 100%;
+	height: 50%;
+	top: 50%;
+	background: rgba(0,131,202,0);
+	background: linear-gradient(to bottom, rgba(0,131,202,0) 0%, rgba(0,131,202,0.62) 62%, rgba(0,131,202,1) 100%);
+}
+.blocoTituloImagem-tituloHeader{
+	width: 30%;
+	font-family: 'Muli', sans-serif;
+	font-size: 3rem;
+	font-weight: bold;
+	color: white;
+	position: absolute;
+	top: 35%;
+	left: 10%;
+}
+.blocoTituloImagem{
+	position: relative;
+	width: 100%;
+	height: 800px;
+	background-image: url("../assets/female-farmer-kenya-west.png");
+	background-size: 125% 100%; 
+	background-repeat: no-repeat;
+}
+/*==========*/
+
+/*=====|Produtos|=====*/
+.container{
+	background-color: rgba(0,131,202,1);
+	padding: 200px 0 200px 0;
+}
+.container-titulo{
+	margin-left: 5%;
+	color: white;
+	font-size: 2rem;
+}
+.containerProdutos{
+	display: flex;
+	justify-content: space-around;
+	/*margin: 0 auto;*/
+	/*width: 100%;*/
+}
+.containerProdutos-bloco{
+	margin-top: 5%;
+	/*display: flex;*/
+	/*justify-content: space-around;*/
+}
+.containerProdutos-bloco-titulo{
+	color: white;
+	text-align: center;
+}
+.containerProdutos-bloco-paragrafo{
+	color: white;
+	text-align: center;
+	width: 200px;
+	margin-left: 7%;
+	font-size: 1.2rem;
+}
+/*==========*/
+/*=====|Apresentação Simulador|=====*/
+.containerSimulador{
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(0,131,202,1);
+	padding: 10%;
+}
+.containerSimulador-formulario{
+	/*display: flex;*/
+	width: 450px;
+	border: 3px solid white;
+	border-radius: 10%;
+	background-color: white;
+	/*padding: 2%; */
+}
+.containerSimulador-formulario label{
+	margin: 0 auto;
+	width: 400px;
+	border-radius: 15%;
+	/*padding: 20%;*/
+	display: flex;
+	background-color: rgba(0,131,202,1);
+}
+.containerSimulador-select{
+	/*padding: 15%;*/
+	/*width: 20px;*/
+	height: 70px;
+	margin: 0 auto;
+	/*border-radius: 50%;*/
+	/*padding-top: 5%;*/
+	background-color: rgba(0,131,202,1);
+}
+.containerSimulador-select option{
+	
+}
+input{
+	display: flex;
+	width: 90%;
+	margin-top: 20%;
+	border-bottom: 1px solid black;
+}
+.containerSimulador-texto{
+	padding-top: 10%;
+	/*padding-bottom: 5%;*/
+}
+
+/*==========*/
+/*=====|Apresentação Simulador - Bloco lateral|=====*/
+.containerSimulador-blocoLateral{
+	/*margin-left: -35%;*/
+	width: 380px;
+	/*height: 400px;*/
+	/*background: black;*/
+}
+.containerSimulador-titulo{
+	color: white;
+	font-size: 2.5rem;
+	width: 270px;
+}
+.containerSimulador-subTitulo{
+	color: white;
+	padding-top: 10%;
+	font-size: 1rem;
+	width: 250px;
+}
+.containerSimulador-paises{
+	padding-top: 10%;
+}
+.containerSimulador-bandeira{
+	display: flex;
+	margin-top: -5%;
+}
+.containerSimulador-nome{
+	color: white;
+	margin-top: 5%;
+}
+/*==========*/
+/*=====|Apresentação Slide|=====*/
+.containerSlide{
+	display: flex;
+	justify-content: space-around;
+	/*margin: 0 auto;*/
+	/*position: relative;*/
+	/*padding-bottom: 10%;*/
+	/*max-width: 100%*/
+	/*background-color: rgba(0,131,202,1);*/
+	background: linear-gradient(to bottom, rgba(0,131,202,1) 0%, rgba(0,131,202,1) 50%, rgba(0,89,202,1) 100%);
+}
+.slide{
+	display: flex;
+	flex-direction: row;
+	width: 300px;	
+	height: 350px;
+	position: relative;
+	left: 150px;
+	/*bottom: 70px;*/
+	background-color: white;
+	border-radius: 5%;
+	box-shadow: 0px 1px 54px -20px rgba(0,0,0,0.75);
+}
+input{
+	display: none;
+}
+input:checked ~ .slide-segundoBloco{
+	display: none;
+}
+.slide-segundoBloco,.slide-primeiroBloco{
+	cursor: pointer;
+}
+.slide-primeiroBloco::before{
+	content:'>';
+	color: white;
+	font-weight: bolder;
+	font-size: 50px;
+	position: absolute;
+	top: 150px;
+	left: 350px;
+}
+.slide-primeiroBloco::after{
+	content:'<';
+	color: white;
+	font-weight: bolder;
+	font-size: 50px;
+	position: absolute;
+	top: 150px;
+	right: 350px;
+}
+.slide-primeiroBloco-img,.slide-segundoBloco-img{
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	width: 270px;
+	height: 200px;
+	border-radius: 5%;
+}
+.slide-primeiroBloco-paragrafo{	
+	margin-top: 70%;
+	padding: 5%; 
+	font-size: 0.7rem;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+.slide-primeiroBloco-titulo{
+	padding: 5%;
+	padding-top: 0;
+	font-size: 0.8rem;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+.containerSlide-titulo{
+	width: 400px;
+	font-size: 2.2rem;
+	color: white;
+	margin-left: 200px;
+	padding-top: 30%;
+	z-index: 5;
+	position: relative;
+}
+.primeiroCirculo{
+	position: absolute;
+	width: 150px;
+	background-color: ;
+}
+.containerSlide-blocoLateral{
+	width: 700px;
+	height: 610px;
+	position: relative;
+	overflow: hidden;
+	/*background: black;*/
+	left: 6.5%;
+	bottom: 50px;
+	padding-bottom: 400px;
+}
+.primeiroCirculo:before{
+	position: absolute;
+	content:'';
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	top: 30px;
+	left: 35%;
+	/*bottom: 10%;*/
+	background-color: #459FD9;
+	opacity: 0.5;
+	z-index: 4;
+}
+.segundoCirculo:before{
+	position: absolute;
+	content:'';
+	width: 600px;
+	height: 600px;
+	border-radius: 50%;
+	top: 1%;
+	left: 30%;
+	bottom: 10%;
+	background-color: #459FD9;
+	opacity: 0.5;
+	z-index: 3;
+}
