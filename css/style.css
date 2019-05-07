@@ -313,3 +313,17 @@ input:checked ~ .slide-segundoBloco{
 	opacity: 0.5;
 	z-index: 3;
 }
+.containerAgencia-titulo{
+	width: 533px;
+	font-size: 64px;
+	color: rgba(238, 51, 37, 1);
+	position: relative;
+	left: 145px;
+	top: 103px;
+}
+.containerAgencia-form{
+	width: 60px;
+	position: relative;
+	left: 60%;
+	color: rgba(107, 107, 107, 1);
+}
