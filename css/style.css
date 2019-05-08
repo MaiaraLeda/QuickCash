@@ -313,17 +313,202 @@ input:checked ~ .slide-segundoBloco{
 	opacity: 0.5;
 	z-index: 3;
 }
+/*=====|Agência|=====*/
+.containerAgencia{
+	display: flex;
+	justify-content: space-around;
+	padding: 5% 0 5% 0; 
+	background-color: #F8F8F8;
+}
 .containerAgencia-titulo{
-	width: 533px;
-	font-size: 64px;
+	width: 350px;
+	font-size: 3rem;
 	color: rgba(238, 51, 37, 1);
-	position: relative;
+	/*position: relative;
 	left: 145px;
-	top: 103px;
+	top: 103px;*/
 }
 .containerAgencia-form{
-	width: 60px;
-	position: relative;
-	left: 60%;
+	width: 200px;
+	/*position: relative;
+	left: 60%;*/
 	color: rgba(107, 107, 107, 1);
+}
+.containerAgencia-form select{
+	background-color: #F8F8F8;
+	width: 250px;
+	/*margin-top: 5%;*/
+	cursor: pointer;
+	border-bottom: 1px solid black; 
+	margin: 5% 0 5% 0;
+}
+.containerAgencia-botao{
+	background-color: #F8F8F8;
+	color: #459FD9;
+	padding-left: 195px;
+	/*text-align: right;*/
+	cursor: pointer;
+}
+.containerMap{
+	background: white;
+	width: 220px;
+	height: 220px;
+	/*padding-bottom: 10px;*/
+	box-shadow: 0px 2px 13px 1px rgba(0,0,0,0.20);
+	/*position: relative;*/
+}
+.containerMap-map{
+	margin: 2% auto 0 auto;
+}
+.containerMap-texto{
+	margin: 0 auto;
+	/*padding-bottom: 5px;*/
+	width: 190px;
+	/*height: 10px;*/
+	font-size: 0.7rem;
+	font-weight: bold;
+	/*position: absolute;*/
+}
+/*=====|Notícias|=====*/
+.containerNoticias{
+	display: flex;
+	justify-content: space-around;
+	margin: 5%;
+	width: 90%;
+}
+.containerNoticias-TituloSecoes{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+.containerNoticias-titulo{
+	color: #459FD9;
+	margin-bottom: 3%;
+	font-size: 2rem;
+}
+.containerNoticias-secoes{
+	display: flex;
+	/*justify-content: space-around;*/
+	/*width: 60%;*/
+	height: 190px;
+	/*height: 150%;*/
+	padding: 2%;
+	background-color: #F8F8F8;
+	border-radius: 5%;
+	margin-bottom: 2%;
+	box-shadow: 0px 1px 3px 1px rgba(0,0,0,0.20);
+}
+.reverse{
+	flex-direction: row-reverse;
+	/*text-align: right;*/
+}
+.containerNoticias-imagem{
+	width: 200px;
+	height: 150px;
+	margin-left: 4%;
+	margin-right: 2%;
+}
+.containerNoticias-blocoTituloTexto-titulo{
+	font-size: 1rem;
+	width: 300px;
+	margin-left: 5%;
+	/*margin-top: 1%;*/
+	margin-bottom: 2%;
+	/*margin-right: 3%;*/
+}
+.containerNoticias-blocoTituloTexto-texto{
+	font-size: 0.7rem;
+	width: 300px;
+	margin-left: 5%;
+	/*margin-right: 5%;
+	margin-top: 5%;*/
+}
+.containerNoticias-showMore{
+	/*display: flex;*/
+	/*align-items: center;*/
+	margin: 0 auto;
+	font-size: 0.8rem;
+	color: #459FD9;
+}
+/*==========*/
+/*=====|News|=====*/
+.containerNoticias-news{
+	/*margin-right: 10%;*/
+	width: 30%;
+	height: 700px;
+	background: #FFDFDF;
+	padding: 1%;
+}
+.containerNoticias-news-titulo{
+	padding: 2%;
+	width: 100%;
+	color: white;
+	background: #D51111;
+}
+.containerNoticias-news-tituloSubTexto{
+
+}
+.containerNoticias-news-subTitulo{
+	font-size: 1rem;
+	padding: 8% 1% 0 1%;
+}
+.containerNoticias-news-texto{
+	font-size: 0.8rem;
+	padding: 5% 1%;
+}
+.containerNoticias-news-texto:after{
+	content:'';
+	position: absolute;
+	width: 200px;
+	height: 1px;
+	/*top: 5px;*/
+	margin-top: 30px;
+	right: 16%;
+	background: black;
+	opacity: 0.1;
+}
+.containerNoticias-showMoreNews{
+	/*margin: 0 auto;*/
+	padding: 0 30%;
+	/*margin-top: 5%;*/
+	font-size: 0.8rem;
+	color: #459FD9;
+}
+/*==========*/
+/*=====|Patrocinadores|=====*/
+.containerNoticias-patrocinadores{
+	width: 900px;
+	margin: 0 auto;
+	display: flex;
+	/*justify-content: space-around;*/
+	justify-content: center;
+	/*flex-direction: column;*/
+	/*align-content: center;*/
+	flex-wrap: wrap;
+	/*padding: 10%;*/
+}
+.containerNoticias-patrocinadores img{
+	/*width: 80px;*/
+	height: 50px;
+	/*display: flex;*/
+	/*align-content: space-around;*/
+	margin: 15px;
+}
+.containerNoticias-patrocinadores-bancos{
+	display: flex;
+	justify-content: space-around;
+	width: 500px;
+	margin: 20px 0;
+}
+.containerNoticias-patrocinadores-instituicoes{
+	display: flex;
+	justify-content: space-around;
+	width: 700px;
+	margin: 20px 0;
+}
+.containerNoticias-patrocinadores-titulo{
+	font-weight: 100;
+	font-size: 1.3rem;
+	width: 500px;
+	margin-right: 150px;
 }
