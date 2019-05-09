@@ -86,7 +86,9 @@
 		</form>
 		<!--=====|Apresentação Simulador - Bloco lateral|=====-->
 		<div class="containerSimulador-blocoLateral">
-			<h1 class="containerSimulador-titulo">Simulate your transfer</h1>
+            <!-- eu usaria h2 aqui -->
+            <h1 class="containerSimulador-titulo">Simulate your transfer</h1>
+            <!-- eu usuaria p aqui -->
 			<h2 class="containerSimulador-subTitulo">QuickCash is currently available in these countries:</h2>
 			<div class="containerSimulador-paises">
 				<div class="containerSimulador-bandeira">
@@ -116,21 +118,26 @@
 	<!--==========-->
 	<!--=====|Apresentação Slide|=====-->
 	<section class="containerSlide">
+        <!-- eu colocaria as bolhas nessa section :) -->
+        <!-- depois colocaria dois quadrados, que no caso, vão te permitir usar flexbox -->
+        
+        <div class="primeiroCirculo"></div>
+        <div class="segundoCirculo"></div>
+        
 		<div class="slide">
 			<input id="slide" type="checkbox">
 			<label for="slide" class="slide-primeiroBloco">
 				<img class="slide-primeiroBloco-img" src="assets/female-farmer-kenya-west.png" alt="">
 				<p class="slide-primeiroBloco-paragrafo">"With QuickCash, I no longer need to go into town for my transfers. Even in the village I can make my transfers at the ATM. Thank you QuickCash to have thought about the rural population. "</p>
-				<h1 class="slide-primeiroBloco-titulo">ThéodoreN'Daplé (Farmer)</h1>
+                <h1 class="slide-primeiroBloco-titulo">ThéodoreN'Daplé (Farmer)</h1>
 			</label>
 			<label for="slide" class="slide-segundoBloco">
 				<img class="slide-segundoBloco-img" src="assets/female-farmer-kenya-west.png" alt="">
 			</label>
-		</div>
+        </div>
+        <!-- não precisa mais dessa div -->
 		<div class="containerSlide-blocoLateral">
 			<h2 class="containerSlide-titulo">Writing a new page in the history of money transfer along with you!</h2>
-			<div class="primeiroCirculo"></div>
-			<div class="segundoCirculo"></div>
 		</div>
 	</section>
 	<!--=====|Agência e Noticia|=====-->
@@ -138,18 +145,20 @@
 		<section class="containerAgencia">
 			<h1 class="containerAgencia-titulo">Find an agency near you!</h1>
 			<form class="containerAgencia-form">
-				<h2>Country</h2>
-				<select id="country" name="country" placeholder="Country">
-					<option value="country">Country</option>
-	                <option value="Brazil">Brazil</option>
-	                <option value="France">France</option>
-	                <option value="Italy">Italy</option>
-	                <option value="Japan">Japan</option>
-	                <option value="Mexico">Mexico</option>
-	                <option value="Portugal">Portugal</option>
-	                <option value="Spain">Spain</option>
-	                <option value="United States">United States</option>
-	            </select>
+                <!-- eu usuria um label aqui! :) assim: -->
+                <label for="country">Country</label>
+                <select id="country" name="country" placeholder="Country">
+                    <option value="country">Country</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="France">France</option>
+                    <option value="Italy">Italy</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Mexico">Mexico</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Spain">Spain</option>
+                    <option value="United States">United States</option>
+                </select>
+                
 	            <h2>State</h2>
 	            <select name="state" id="state" placeholder="State" >
 					<option value="state">State</option>

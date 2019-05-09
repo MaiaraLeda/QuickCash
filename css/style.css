@@ -1,5 +1,19 @@
-* {box-sizing: border-box; border:0; margin:0; padding:0; font-style: none; text-decoration: none; list-style: none;}
-body {font: 100% 'Muli', sans-serif, Montserrat Alternates, sans-serif;} /*'Merriweather Sans', sans-serif;*/
+/* eu não usuaria tantas coisas no seletor universal */
+* {
+	box-sizing: border-box;
+}
+
+/* hack util :) */
+img {
+    max-width: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+	font: 100% 'Muli', sans-serif, Montserrat Alternates, sans-serif;
+} /*'Merriweather Sans', sans-serif;*/
+
 @import url('https://fonts.googleapis.com/css?family=Muli');
 
 /*=====|Header|=====*/
@@ -74,10 +88,11 @@ body {font: 100% 'Muli', sans-serif, Montserrat Alternates, sans-serif;} /*'Merr
 	left: 10%;
 }
 .blocoTituloImagem{
-	position: relative;
-	width: 100%;
-	height: 800px;
-	background-image: url("../assets/female-farmer-kenya-west.png");
+    position: relative;
+    /* eu usaria aqui 80vh */
+	min-height: 80vh;
+    background-image: url("../assets/female-farmer-kenya-west.png");
+    /* eu usaria cover */
 	background-size: 125% 100%; 
 	background-repeat: no-repeat;
 }
