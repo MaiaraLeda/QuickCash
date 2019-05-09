@@ -272,11 +272,6 @@ input:checked ~ .slide-segundoBloco{
 	z-index: 5;
 	position: relative;
 }
-.primeiroCirculo{
-	position: absolute;
-	width: 150px;
-	background-color: ;
-}
 .containerSlide-blocoLateral{
 	width: 700px;
 	height: 610px;
@@ -286,6 +281,10 @@ input:checked ~ .slide-segundoBloco{
 	left: 6.5%;
 	bottom: 50px;
 	padding-bottom: 400px;
+}
+.primeiroCirculo{
+	position: absolute;
+	width: 150px;
 }
 .primeiroCirculo:before{
 	position: absolute;
