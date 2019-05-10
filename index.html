@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>QuickCash</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700|Montserrat+Alternates:400,700,800i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,600|Montserrat:500,600,700|Muli:300" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="keywords" content=""><!-- palavras chave -->
 	<meta name="description" content=""><!-- descrição do site -->
@@ -17,7 +17,7 @@
 	<header class="containerHeader">
 		<section class="containerHeader-barraSuperior">
 			<div class="blocoLogo">
-				<img class="blocoLogo-logo" src="assets/quickcash.jpg">
+				<img class="blocoLogo-logo" src="assets/logo.png">
 			</div>
 			<nav class="blocoMenu">
 				<a href="" class="blocoMenu-link">About us</a>
@@ -62,7 +62,7 @@
 	<!--==========-->
 	<!--=====|Apresentação Simulador|=====-->
 	<section class="containerSimulador">
-		<form class="containerSimulador-formulario" action="">
+		<!-- <form class="containerSimulador-formulario" action="">
 			<label for="">
 				<h1>From:</h1>
 				<select class="containerSimulador-select" name="simulador" id="">
@@ -83,32 +83,32 @@
 				<p>Today's rate: €1 = 655.96 FCFA</p>
 				<p>€2.00 fee</p>
 			</div>
-		</form>
+		</form> -->
 		<!--=====|Apresentação Simulador - Bloco lateral|=====-->
 		<div class="containerSimulador-blocoLateral">
             <!-- eu usaria h2 aqui -->
-            <h1 class="containerSimulador-titulo">Simulate your transfer</h1>
+            <h2 class="containerSimulador-titulo">Simulate your transfer</h2>
             <!-- eu usuaria p aqui -->
-			<h2 class="containerSimulador-subTitulo">QuickCash is currently available in these countries:</h2>
+			<p class="containerSimulador-subTitulo">QuickCash is currently available in these countries:</p>
 			<div class="containerSimulador-paises">
 				<div class="containerSimulador-bandeira">
-					<img src="assets/2.png" alt="">
+					<img src="assets/Costa-do-marfim.png" alt="">
 					<p class="containerSimulador-nome">Ivory Coast</p>
 				</div>
 				<div class="containerSimulador-bandeira">
-					<img src="assets/3.png" alt="">
+					<img src="assets/BurkinaFaso.png" alt="">
 					<p class="containerSimulador-nome">Burkina Faso</p>
 				</div>
 				<div class="containerSimulador-bandeira">
-					<img src="assets/4.png" alt="">
+					<img src="assets/mali.png" alt="">
 					<p class="containerSimulador-nome">Mali</p>
 				</div>
 				<div class="containerSimulador-bandeira">
-					<img src="assets/5.png" alt="">
+					<img src="assets/Niger.png" alt="">
 					<p class="containerSimulador-nome">Niger</p>
 				</div>
 				<div class="containerSimulador-bandeira">
-					<img src="assets/6.png" alt="">
+					<img src="assets/Togo.png" alt="">
 					<p class="containerSimulador-nome">Togo</p>
 				</div>
 			</div>
@@ -121,32 +121,36 @@
         <!-- eu colocaria as bolhas nessa section :) -->
         <!-- depois colocaria dois quadrados, que no caso, vão te permitir usar flexbox -->
         
-        <div class="primeiroCirculo"></div>
-        <div class="segundoCirculo"></div>
-        
-		<div class="slide">
-			<input id="slide" type="checkbox">
-			<label for="slide" class="slide-primeiroBloco">
-				<img class="slide-primeiroBloco-img" src="assets/female-farmer-kenya-west.png" alt="">
-				<p class="slide-primeiroBloco-paragrafo">"With QuickCash, I no longer need to go into town for my transfers. Even in the village I can make my transfers at the ATM. Thank you QuickCash to have thought about the rural population. "</p>
-                <h1 class="slide-primeiroBloco-titulo">ThéodoreN'Daplé (Farmer)</h1>
-			</label>
-			<label for="slide" class="slide-segundoBloco">
-				<img class="slide-segundoBloco-img" src="assets/female-farmer-kenya-west.png" alt="">
-			</label>
+        <div class="blocoSlide">
+			<div class="slide">
+				<input id="slide" type="checkbox">
+				<label for="slide" class="slide-primeiroBloco">
+					<img class="slide-primeiroBloco-img" src="assets/female-farmer-kenya-west.png" alt="">
+					<p class="slide-primeiroBloco-paragrafo">"With QuickCash, I no longer need to go into town for my transfers. Even in the village I can make my transfers at the ATM. Thank you QuickCash to have thought about the rural population. "</p>
+		            <h1 class="slide-primeiroBloco-titulo">ThéodoreN'Daplé (Farmer)</h1>
+				</label>
+				<label for="slide" class="slide-segundoBloco">
+					<img class="slide-segundoBloco-img" src="assets/atelier-secteur-agricole.png" alt="">
+				</label>
+		    </div>
+        </div>
+        <div class="circulos">
+		    <div class="primeiroCirculo"></div>
+		    <div class="segundoCirculo"></div>
         </div>
         <!-- não precisa mais dessa div -->
-		<div class="containerSlide-blocoLateral">
 			<h2 class="containerSlide-titulo">Writing a new page in the history of money transfer along with you!</h2>
-		</div>
 	</section>
 	<!--=====|Agência e Noticia|=====-->
 	<main class="containerPrincipal">
 		<section class="containerAgencia">
+			<img class="containerAgencia-icon" src="assets/globo.svg" alt="">
 			<h1 class="containerAgencia-titulo">Find an agency near you!</h1>
+			<!-- <div class="containerAgencia-globo"> -->
+			<!-- </div> -->
 			<form class="containerAgencia-form">
                 <!-- eu usuria um label aqui! :) assim: -->
-                <label for="country">Country</label>
+                <label class="containerAgencia-label" for="country">Country</label>
                 <select id="country" name="country" placeholder="Country">
                     <option value="country">Country</option>
                     <option value="Brazil">Brazil</option>
@@ -159,20 +163,21 @@
                     <option value="United States">United States</option>
                 </select>
                 
-	            <h2>State</h2>
+	            <label class="containerAgencia-label" for="state">State</label>
 	            <select name="state" id="state" placeholder="State" >
 					<option value="state">State</option>
 					<option value="state">State</option>
 					<option value="state">State</option>
 				</select>
-				<h2>City</h2>
+
+				<label class="containerAgencia-label" for="city">City</label>
 				<select name="city" id="city" placeholder="City" >
 					<option value="city">City</option>
 					<option value="city">City</option>
 					<option value="city">City</option>
 				</select>
-				<button>
-					<p class="containerAgencia-botao">SEARCH</p>	
+				<button class="containerAgencia-botao">
+					<a class="containerAgencia-botao-link">SEARCH</a>	
 				</button>
 			</form>
 			<div class="containerMap">
