@@ -297,7 +297,7 @@ input:checked ~ .slide-segundoBloco{
 	color: white;
 	margin-left: 240px;
 	/*padding-top: 30%;*/
-	z-index: 5;
+	/*z-index: 5;*/
 	position: absolute;
 	font-family: 'Montserrat', sans-serif;
 	/*font-weight: 700;*/
@@ -313,43 +313,29 @@ input:checked ~ .slide-segundoBloco{
 	bottom: 50px;
 	padding-bottom: 400px;
 }*/
+
+/*==============*/
 .circulos{
-	width: 50vw;
-	left: 6%;
-	bottom: 100px;
-	position: relative;
 	overflow: hidden;
 }
 .primeiroCirculo{
-	/*position: absolute;*/
-	width: 150px;
-}
-.primeiroCirculo:before{
-	position: absolute;
-	content:'';
-	width: 280px;
-	height: 280px;
-	border-radius: 50%;
-	top: 50%;
-	right: 50%;
-	/*bottom: 10%;*/
+	clip-path: circle(25% at 60% 50%);
+	width: 100vw;
+	height: 100vh;
 	background-color: #459FD9;
 	opacity: 0.5;
-	z-index: 4;
 }
-.segundoCirculo:before{
-	position: absolute;
+.segundoCirculo{
+	position: relative;
 	content:'';
-	width: 550px;
-	height: 550px;
+	width: 250px;
+	height:250px;
 	border-radius: 50%;
-	/*top: 5%;*/
-	left: 20%;
-	/*bottom: 62px;*/
+	left: 35%;
+	bottom: 45%;
 	background-color: #459FD9;
 	opacity: 0.5;
-	z-index: 3;
-}
+}	
 /*=====|Agência|=====*/
 .containerAgencia{
 	display: flex;
@@ -595,4 +581,65 @@ input:checked ~ .slide-segundoBloco{
 	margin-right: 150px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
+}
+/*=========*/
+.containerFooter{
+	display: flex;
+	justify-content: space-around;
+	background-color: #EE3325;
+	height: 55vh;
+}
+.containerFooter-circulosMaiores{
+	/*padding: 5%;*/
+	margin: 2% 0; 
+}
+.containerFooter-circulosMaiores img{
+	width: 250px;
+	opacity: 0.6;
+}
+.containerFooter-logoContatos{
+	margin: 5% 0;
+}
+.logoContatos-logoFooter{
+	padding-bottom: 20px;
+}
+.logoContatos-logoFooter img{
+	width: 250px;
+}
+.logoContatos-iconTexto{
+	color: white;
+	display: flex;
+	font-size: 0.8rem;
+	margin: -9px 0;
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-weight: 600;
+}
+.logoContatos-iconTexto img{
+	padding-right: 1%;
+	width: 20px;
+}
+.logoContatos-textoCopy{
+	font-size: 0.7rem;
+	margin-top: 25px;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+.logoContatos-textoCopy-copy{
+	color: black;
+	opacity: 0.7;
+}
+.containerfooter-menuFooter{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;	
+	margin-top: 5%;
+	height: 35vh;
+}
+.containerfooter-menuFooter a{
+	color: white;
+	font-size: 0.7rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+.containerfooter-menuFooter img{
+	margin-top: 30px;
 }
