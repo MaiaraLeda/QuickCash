@@ -826,6 +826,13 @@ input:checked ~ .slide-segundoBloco{
 			
 		}
 	}
+	@media screen and (max-width: 458px){
+		.containerNoticias-patrocinadores img{
+			width: 60px;
+			height: 60px;
+			
+		}
+	}
 .containerNoticias-patrocinadores-bancos{
 	display: flex;
 	justify-content: space-around;
@@ -1364,6 +1371,14 @@ input:checked ~ .slide-segundoBloco{
 	display: flex;
 	margin-left: 5%;
 }
+	@media screen and (max-width: 1024px){
+		.blocoSessoes-blocoTextoLateral{
+			width: initial;
+			font-size: 0.6rem;
+			display: flex;
+			margin-left: 0;
+		}		
+	}
 	@media screen and (max-width: 1024px){
 		.blocoSessoes-blocoTextoLateral{
 			width: initial;
